@@ -82,10 +82,8 @@ static int data[100000] = {};
 static int elem_check[100000] = {};
 
 int main() {
-	std::ofstream fin1;
-	std::ofstream fin2;
-	fin1.open("n_data.txt");
-	fin2.open("time_data.txt");
+	std::ofstream fin2("time_data.txt");
+	std::ofstream fin1("n_data.txt");
 	int counter = 100;
 	unsigned seed = 1001;
 	std::default_random_engine rng(seed);
